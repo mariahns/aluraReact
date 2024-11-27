@@ -1,0 +1,33 @@
+Node.js----
+
+Para conseguir acompanhar a criação da aplicação em React, é necessário que você tenha o Node instalado. Você pode baixá-lo aqui
+Temos um artigo com o passo a passo de como para instalar o Node no Windows, MacOS e Linux.
+Windows
+
+Para instalar o Node, clique no link do Node.js https://nodejs.org/en/download/package-manager e baixe a versão LTS (versão recomendada).
+https://www.alura.com.br/artigos/como-instalar-node-js-windows-linux-macos
+
+Para verificar se foi instalado corretamente, abra o terminal e escreva: node -v ou node --version.
+
+Aqui, você encontra o projeto de Design elaborado no Figma e utilizado nesse curso: https://www.figma.com/community/file/1410393986549302425
+
+Baixe aqui o zip com todas as imagens que serão utilizadas no projeto https://www.figma.com/community/file/1410393986549302425
+
+
+Criando um projeto-----
+
+Agora com o Terminal no Node aberto, podemos chamar o npx e verificar a versao:
+
+>node -v
+v16.13.2
+
+Criando o projeto organo:
+pastado projeto> npx create-react-app organo
+
+Subindo o projeto:
+pastado projeto> npm start
+
+
+
+
+
