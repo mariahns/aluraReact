@@ -1,33 +1,17 @@
 .footer {
-    background-image: url(/public/imagens/fundo.png);
-    max-width: 100%;
-    background-color: #6278F7;
+    background: #6278F7;
+    color: #FFF;
+    padding: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 50px;
-    gap: 30px;
 }
 
-.footer .footer-sociais img {
-    max-width: 100%;
-    margin-right: 20px;
-    cursor: pointer;
-    opacity: 0.6;
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
 }
 
-.footer-sociais img:hover {
-    opacity: 1;
-}
-
-.footer .footer-logo img {
-    max-width: 100%;
-}
-
-.footer .footer-criador {
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    max-width: 100%;
+.footer ul li:last-child {
+    margin-right: 0;
 }
