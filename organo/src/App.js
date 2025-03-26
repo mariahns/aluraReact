@@ -6,43 +6,36 @@ import Time from "./componentes/Time";
 
 function App() {
 
-  const times = [
+  const [times, setTimes] = useState ([
     {
-      nome: 'Programação',
-      corPrimaria: '#D9F7E9',
-      corSecundaria: '#57C278'
+      nome: 'Programação',      
+      cor: '#57C278'
     },
     {
-      nome: 'Front-End',
-      corPrimaria: '#E8F8FF',
-      corSecundaria: '#82CFFA'
+      nome: 'Front-End',      
+      cor: '#82CFFA'
     },
     {
-      nome: 'Data Science',
-      corPrimaria: '#F0F8E2',
-      corSecundaria: '#A6D157'
+      nome: 'Data Science',      
+      cor: '#A6D157'
     },
     {
-      nome: 'Devops',
-      corPrimaria: '#FDE7E8',
-      corSecundaria: '#E06B69'
+      nome: 'Devops',      
+      cor: '#E06B69'
     },
     {
-      nome: 'UX e Design',
-      corPrimaria: '#FAE9F5',
-      corSecundaria: '#DB6EBF'
+      nome: 'UX e Design',      
+      cor: '#DB6EBF'
     },
     {
-      nome: 'Mobile',
-      corPrimaria: '#FFF5D9',
-      corSecundaria: '#FFBA05'
+      nome: 'Mobile',      
+      cor: '#FFBA05'
     },
     {
-      nome: 'Inovação e Gestão',
-      corPrimaria: '#FFEEDF',
-      corSecundaria: '#FF8A29'
+      nome: 'Inovação e Gestão',      
+      cor: '#FF8A29'
     },
-  ]
+  ]);
 
   const inicial = [
     {
@@ -197,6 +190,15 @@ function App() {
     console.log('deletando');
   }
 
+  function mudarCordoTime(cor, nome) {
+    setTimes( times.map ( time => {
+        if (time.nome === nome) {
+          time.cor = cor; 
+        }
+        return time;
+    }))   
+  }   
+
 
   return (
     <div>
@@ -206,6 +208,7 @@ function App() {
         <h1>Minha organização</h1>
         {times.map((time, indice) => 
         <Time 
+          mudarCor={mudarCordoTime}
           key={indice} 
           time={time} 
           colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} 
