@@ -1,6 +1,6 @@
 .time {
     text-align: center;
-    padding: 32px;
+    padding: 40px;
     background-blend-mode: multiply;
     position: relative;
 }
@@ -24,4 +24,36 @@
     position: absolute;
     top: 20px;
     right: 50px;
+    text-align: right;
+}
+
+.linha-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.lado-esquerdo,
+.lado-direito,
+.centro {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado-direito {
+    justify-content: flex-end;
+    padding-right: 32px;
+}
+
+.centro h1 {
+    font-size: 32px;
+    font-family: 'Prata';
+    border-bottom: 4px solid;
+    padding-bottom: 30px;
+    margin: 0;
+    text-align: center;
 }
