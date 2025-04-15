@@ -3,6 +3,7 @@ import hexToRgba from 'hex-to-rgba';
 import './time.css'
 
 const Time = ({ time, colaboradores, aoDeletar, mudarCor, aoFavoritar }) => {
+    
     return (
         colaboradores.length > 0 && <section className='time' style={{ backgroundImage: 'url(/imagens/fundo.png)', backgroundColor: hexToRgba(time.cor, '0.2') }}>
             <input type='color' value={time.cor} className='input-cor' onChange={e => mudarCor(e.target.value, time.id)} />

@@ -25,7 +25,15 @@ Criando o projeto organo:
 pastado projeto> npx create-react-app organo
 
 Subindo o projeto:
+
 pastado projeto> npm start
+
+
+Comando para tornar o json um serviço na sua maquina-------------
+npm install -g json-server
+
+json-server --watch dbColaboradores.json -p 8080
+json-server --watch dbCTimes.json -p 8081
 
 
 
