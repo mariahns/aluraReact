@@ -319,7 +319,6 @@ function App() {
       />)}
 
       <section className="time">
-
         <section className="time">
           <div className="linha-topo">
             <div className="lado-esquerdo"></div>
@@ -340,7 +339,7 @@ function App() {
             time={time}
             colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
             aoDeletar={deletarColaborador}
-          />)}
+         />)}
       </section>
       <Rodape />
     </div>
